@@ -1,10 +1,14 @@
-import { Navbar, Header } from "@/layout";
+import { MainLayout } from "./_layout";
+import { VisionSection, TextSlide, HeroSection } from "./_components";
 
 export default function Home() {
   return (
     <main className=" ">
-      <Navbar />
-      <Header />
+      <MainLayout>
+        <HeroSection />
+        <TextSlide />
+        <VisionSection />
+      </MainLayout>
     </main>
   );
 }

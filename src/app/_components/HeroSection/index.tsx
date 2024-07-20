@@ -1,7 +1,7 @@
 import { ButtonEmergency } from "@/app/_components";
 import Image from "next/image";
 
-export function Hero() {
+export function HeroSection() {
   return (
     <>
       <section className="flex items-start justify-between gap-3 py-4 w-full px-8 mt-20">

@@ -1,11 +1,8 @@
 import { ParallaxSlider } from "@/app/_components";
-import { Hero } from "./Hero";
-import Image from "next/image";
 
-export function Header() {
+export function TextSlide() {
   return (
     <>
-      <Hero />
       <div className="select-none mt-5">
         <div className="w-full border-b-2 border-t-2 border-black">
           <h1 className="text-[max(2em,5vw)]">
@@ -16,6 +13,7 @@ export function Header() {
           </h1>
         </div>
       </div>
+      {/* next Componenet */}
     </>
   );
 }

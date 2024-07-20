@@ -1,3 +1,1 @@
-export * from "./header/Hero";
-export * from "./navbar";
-export * from "./header";
+export * from "./MainLayout";
