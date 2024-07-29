@@ -27,7 +27,7 @@
       "@/layout": ["./app/_layout/index.ts"],
       "@/lib": ["./app/_lib/index.ts"],
       "@/utils": ["./app/_utils/index.ts"],
-      "@/*": ["./*"]
+      "@/*": ["src/*"]
     }
   },
   "include": [
