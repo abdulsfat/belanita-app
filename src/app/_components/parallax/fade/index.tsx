@@ -1,13 +1,16 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { ReactNode } from "react";
+import { motion } from "framer-motion";
+import { fade } from "./variants";
 
-import { fade } from './variants';
+interface ParallaxFadeProps {
+  children: ReactNode;
+}
 
-/** @param {import('react').PropsWithChildren<unknown>} */
-export function ParallaxFade({ children }) {
+export function ParallaxFade({ children }: ParallaxFadeProps) {
   return (
-    <motion.div variants={fade} initial='initial' whileInView='open'>
+    <motion.div variants={fade} initial="initial" whileInView="open">
       {children}
     </motion.div>
   );

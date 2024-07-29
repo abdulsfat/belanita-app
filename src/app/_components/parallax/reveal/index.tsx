@@ -1,22 +1,24 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { reveal } from "./variants";
 
-import { reveal } from './variants';
+interface ParallaxRevealProps {
+  paragraph: string;
+}
 
-/** @param {{paragraph: string}}  */
-export function ParallaxReveal({ paragraph }) {
+export function ParallaxReveal({ paragraph }: ParallaxRevealProps) {
   const words = paragraph
-    .split(' ')
+    .split(" ")
     .map((word, index) => ({ id: index, word }));
 
   const text = words.map(({ id, word }) => (
-    <span key={id} className='me-2 inline-flex overflow-hidden'>
+    <span key={id} className="me-2 inline-flex overflow-hidden">
       <motion.span
         custom={id}
         variants={reveal}
-        initial='initial'
-        whileInView='open'
+        initial="initial"
+        whileInView="open"
       >
         {word}
       </motion.span>
