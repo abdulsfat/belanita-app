@@ -1,14 +1,17 @@
-import { MainLayout } from "./_layout";
-import { VisionSection, TextSlide, HeroSection } from "./_components";
+import {
+  CommunitySection,
+  HeroSection,
+  TextSlide,
+  VisionSection,
+} from "@/components";
 
 export default function Home() {
   return (
-    <main className=" ">
-      <MainLayout>
-        <HeroSection />
-        <TextSlide />
-        <VisionSection />
-      </MainLayout>
-    </main>
+    <>
+      <HeroSection />
+      <TextSlide text={"Women’s rights are human rights!"} />
+      <VisionSection />
+      <CommunitySection />
+    </>
   );
 }

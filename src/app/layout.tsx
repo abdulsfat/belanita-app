@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
+import { MainLayout } from "./_layout";
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"] });
 
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={redHatDisplay.className}>{children}</body>
+      <body className={redHatDisplay.className}>
+        <MainLayout>{children}</MainLayout>
+      </body>
     </html>
   );
 }
