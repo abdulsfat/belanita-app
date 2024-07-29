@@ -1,3 +1,3 @@
-export * from "./fade";
-export * from "./reveal";
-export * from "./slider";
+export * from "./ParallaxFade";
+export * from "./ParallaxReveal";
+export * from "./ParallaxSlider";
